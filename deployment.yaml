@@ -18,7 +18,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: dockersampath/packages:latest
+      - image: dockersampath/packages:5
         name: myapp
         resources: {}
 status: {}
