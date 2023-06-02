@@ -12,8 +12,8 @@ node {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                       
-                        sh "git config user.email sampath853@gmail.com"
-                        sh "git config user.name hi-sampath"
+                        sh "git config user.email sampathshivakumar@gmail.com"
+                        sh "git config user.name sampathshivakumar"
                       
                         sh "cat deployment.yaml"
                         sh "sed -i 's+dockersampath/packages.*+dockersampath/packages:${DOCKERTAG}+g' deployment.yaml"
