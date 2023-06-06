@@ -18,7 +18,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: protech07/packages:7
+      - image: dockersampath/packages:7
         name: myapp
         resources: {}
 status: {}
